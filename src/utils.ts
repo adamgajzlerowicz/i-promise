@@ -35,3 +35,7 @@ export function getAddressForUser(id: number) {
 export function toLowerCase(data: string) {
     return data.toLowerCase()
 }
+
+export function checkIfResultCorrect(data: string) {
+    return promisify(data === "wałcz")
+}
