@@ -4,7 +4,6 @@ const promisify = <T>(data: T) => new Promise<T>(resolve => {
     setTimeout(() => resolve(data), 1000)
 })
 
-
 export function getUser (id: number) {
     if (id !== 11) {
         throw new Error('user not found')
